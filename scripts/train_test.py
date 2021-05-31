@@ -51,7 +51,7 @@ def nogauss(a):
     std = torch.std(a, dim=1, keepdim=True).repeat(1,num)
     mean = torch.mean(a, dim=1, keepdim=True).repeat(1,num)
     cal = (a-mean)/std
-    print("std:{},mean:{},cal:{}".format(std[0].detach().numpy(),mean[0].detach().numpy(),cal[0].detach().numpy()))
+    print("std:{},mean:{},cal:{}".format(std[0].cpu().detach().numpy(),mean[0].cpu().detach().numpy(),cal[0].cpu().detach().numpy()))
     y = torch.mean(torch.pow(cal,4),1)-3*torch.pow(torch.mean(torch.pow(cal,2),1),2)
     # print("y:{}".format(y[1]))
     return torch.mean(torch.abs(y))
