@@ -1,0 +1,6 @@
+data/
+data_s/
+data_t/
+experiments/
+.git/
+checkpoint/
