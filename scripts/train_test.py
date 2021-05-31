@@ -157,6 +157,8 @@ def train_test(config):
         focals = torch.cat((focal_source,focal_target),dim=0)
         softmax_out = nn.Softmax(dim=1)(outputs)
 
+        print("outputs:{},focals:{}".format(outputs[0],focals[0]))
+
         #similarity
         sim_source = torch.sum(outputs_source *focal_source,1)/torch.sqrt(torch.sum(torch.pow(outputs_source,2),1))/torch.sqrt(torch.sum(torch.pow(focal_source,2),1))
         sim_target = torch.sum(outputs_target *focal_target,1)/torch.sqrt(torch.sum(torch.pow(outputs_target,2),1))/torch.sqrt(torch.sum(torch.pow(focal_target,2),1))
