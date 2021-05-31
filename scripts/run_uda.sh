@@ -1,0 +1,1 @@
+python 2main.py  --task UDA --test_interval 500 --snapshot_interval 6000 --num_iterations 6002 --dset office-home --s_dset_path Art.txt --t_dset_path Clipart.txt --gpu_id 0   --heuristic 1  --heuristic_num 3 --heuristic_initial True   --output_dir HDA/UDA/ArCl7 --seed 2020  

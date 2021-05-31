@@ -1,0 +1,35 @@
+2020
+Traceback (most recent call last):
+  File "2main.py", line 148, in <module>
+    train_msda(config)
+  File "/home/xuemeng/Proj/BabyCare/HDA/scripts/train_msda.py", line 144, in train_msda
+    inputs_source, labels_source, label_domain = iter_source.next()
+  File "/home/xuemeng/anaconda3/envs/pytorch/lib/python3.7/site-packages/torch/utils/data/dataloader.py", line 517, in __next__
+    data = self._next_data()
+  File "/home/xuemeng/anaconda3/envs/pytorch/lib/python3.7/site-packages/torch/utils/data/dataloader.py", line 1199, in _next_data
+    return self._process_data(data)
+  File "/home/xuemeng/anaconda3/envs/pytorch/lib/python3.7/site-packages/torch/utils/data/dataloader.py", line 1225, in _process_data
+    data.reraise()
+  File "/home/xuemeng/anaconda3/envs/pytorch/lib/python3.7/site-packages/torch/_utils.py", line 429, in reraise
+    raise self.exc_type(msg)
+FileNotFoundError: Caught FileNotFoundError in DataLoader worker process 0.
+Original Traceback (most recent call last):
+  File "/home/xuemeng/anaconda3/envs/pytorch/lib/python3.7/site-packages/torch/utils/data/_utils/worker.py", line 202, in _worker_loop
+    data = fetcher.fetch(index)
+  File "/home/xuemeng/anaconda3/envs/pytorch/lib/python3.7/site-packages/torch/utils/data/_utils/fetch.py", line 44, in fetch
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "/home/xuemeng/anaconda3/envs/pytorch/lib/python3.7/site-packages/torch/utils/data/_utils/fetch.py", line 44, in <listcomp>
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "/home/xuemeng/Proj/BabyCare/HDA/dataset/dataloader.py", line 97, in __getitem__
+    img = self.loader(path)
+  File "/home/xuemeng/Proj/BabyCare/HDA/dataset/dataloader.py", line 26, in rgb_loader
+    with open(path, 'rb') as f:
+FileNotFoundError: [Errno 2] No such file or directory: './data/dataset/domainnet/painting/tiger/painting_312_000302.jpg'
+
+Error in atexit._run_exitfuncs:
+Traceback (most recent call last):
+  File "/home/xuemeng/anaconda3/envs/pytorch/lib/python3.7/multiprocessing/popen_fork.py", line 28, in poll
+    pid, sts = os.waitpid(self.pid, flag)
+  File "/home/xuemeng/anaconda3/envs/pytorch/lib/python3.7/site-packages/torch/utils/data/_utils/signal_handling.py", line 66, in handler
+    _error_if_any_worker_fails()
+RuntimeError: DataLoader worker (pid 2369054) is killed by signal: Terminated. 
