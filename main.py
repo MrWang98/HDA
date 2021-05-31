@@ -38,7 +38,7 @@ if __name__ == "__main__":
     parser.add_argument('--s_dset_path', type=str, default='Art.txt', help="The source dataset path list")
     parser.add_argument('--t_dset_path', type=str, default='Clipart.txt', help="The target dataset path list")
     parser.add_argument('--output_dir', type=str, default='san', help="output directory of our model (in ../snapshot directory)")
-    parser.add_argument('--test_interval', type=int, default=500, help="interval of two continuous test phase")
+    parser.add_argument('--test_interval', type=int, default=2, help="interval of two continuous test phase")
     parser.add_argument('--snapshot_interval', type=int, default=5000, help="interval of two continuous output model")
     parser.add_argument('--print_num', type=int, default=100, help="interval of two print loss")
     parser.add_argument('--num_iterations', type=int, default=6002, help="interation num ")
