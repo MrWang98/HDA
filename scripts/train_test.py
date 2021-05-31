@@ -107,6 +107,7 @@ def train_test(config):
 
     #multi gpu
     gpus = config['gpu'].split(',')
+    print("gpus len:{}".format(len(gpus)))
     if len(gpus) > 1:
         ad_net = nn.DataParallel(ad_net, device_ids=[int(i) for i,k in enumerate(gpus)])
         base_network = nn.DataParallel(base_network, device_ids=[int(i) for i,k in enumerate(gpus)])
