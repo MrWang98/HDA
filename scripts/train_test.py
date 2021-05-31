@@ -53,7 +53,7 @@ def nogauss(a):
     cal = (a-mean)/std
     # print("std:{},mean:{},cal:{}".format(std,mean,cal))
     y = torch.mean(torch.pow(cal,4),1)-3*torch.pow(torch.mean(torch.pow(cal,2),1),2)
-    print("y:{}".format(y))
+    print("y:{}".format(y[1]))
     return torch.mean(torch.abs(y))
 
 def train_test(config):
