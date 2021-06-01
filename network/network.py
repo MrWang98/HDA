@@ -85,7 +85,7 @@ def hun_weights(m):
         nn.init.kaiming_normal_(m.weight,a=100)
         nn.init.zeros_(m.bias)
 
-resnet_dict = {"ResNet18":models.resnet18, "ResNet34":models.resnet34, "ResNet50":resnet.resnet50, "ResNet101":models.resnet101, "ResNet152":models.resnet152}
+resnet_dict = {"ResNet18":models.resnet18, "ResNet34":models.resnet34, "ResNet50":models.resnet50, "ResNet101":models.resnet101, "ResNet152":models.resnet152}
 
 def grl_hook(coeff):
     def fun1(grad):
