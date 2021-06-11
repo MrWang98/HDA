@@ -82,7 +82,7 @@ def train_test(config):
     dsets["test"] = ImageList(open(data_config["test"]["list_path"]).readlines(), \
                             transform=prep_dict["test"])
     dset_loaders["test"] = DataLoader(dsets["test"], batch_size=test_bs, \
-                                shuffle=False, num_workers=0)
+                                shuffle=True, num_workers=0)
 
     ## set base network
     class_num = config["network"]["params"]["class_num"]
