@@ -1,0 +1,223 @@
+2019
+gpus len:1
+iter:00000,transfer:0.92169,classifier:1.09451,heuristic:0.79535,relate:0.99997,gaussian:0.00000
+iter:00100,transfer:0.74009,classifier:1.17064,heuristic:0.68442,relate:0.80758,gaussian:0.00000
+iter:00200,transfer:0.76956,classifier:3.37738,heuristic:2.72186,relate:0.99992,gaussian:0.00000
+iter:00300,transfer:0.77722,classifier:1.22519,heuristic:1.71042,relate:0.98530,gaussian:0.00000
+iter:00400,transfer:0.79961,classifier:1.22736,heuristic:1.77326,relate:0.98663,gaussian:0.00000
+iter:00500,transfer:0.72584,classifier:0.63060,heuristic:0.57936,relate:0.93387,gaussian:0.00000
+iter:00600,transfer:0.72301,classifier:0.40701,heuristic:1.07190,relate:0.91727,gaussian:0.00000
+iter:00700,transfer:0.75889,classifier:0.67112,heuristic:1.04905,relate:0.95974,gaussian:0.00000
+iter:00800,transfer:0.69105,classifier:0.46475,heuristic:0.66174,relate:0.51048,gaussian:0.00000
+iter:00900,transfer:0.68178,classifier:0.40300,heuristic:0.41637,relate:0.47516,gaussian:0.00000
+iter: 00999, precision: 0.57397
+iter:01000,transfer:0.72210,classifier:0.28885,heuristic:0.68120,relate:0.53333,gaussian:0.00000
+iter:01100,transfer:0.74953,classifier:0.19398,heuristic:0.44831,relate:0.62159,gaussian:0.00000
+iter:01200,transfer:0.71359,classifier:0.19710,heuristic:0.67748,relate:0.99118,gaussian:0.00000
+iter:01300,transfer:0.66323,classifier:0.22589,heuristic:0.54198,relate:0.41884,gaussian:0.00000
+iter:01400,transfer:0.67830,classifier:0.28315,heuristic:0.11128,relate:0.67214,gaussian:0.00000
+iter:01500,transfer:0.74415,classifier:0.46085,heuristic:0.40961,relate:0.59058,gaussian:0.00000
+iter:01600,transfer:0.71034,classifier:0.21244,heuristic:0.28381,relate:0.97518,gaussian:0.00000
+iter:01700,transfer:0.70359,classifier:0.37032,heuristic:0.24247,relate:0.28044,gaussian:0.00000
+iter:01800,transfer:0.70489,classifier:0.54055,heuristic:0.19289,relate:0.43013,gaussian:0.00000
+iter:01900,transfer:0.70545,classifier:0.33974,heuristic:0.28766,relate:0.36993,gaussian:0.00000
+iter: 01999, precision: 0.49002
+iter:02000,transfer:0.70177,classifier:0.65375,heuristic:0.43271,relate:0.99084,gaussian:0.00000
+iter:02100,transfer:0.71472,classifier:0.36848,heuristic:0.27184,relate:0.40579,gaussian:0.00000
+iter:02200,transfer:0.70308,classifier:0.24859,heuristic:0.22473,relate:0.97046,gaussian:0.00000
+iter:02300,transfer:0.68181,classifier:0.42530,heuristic:0.44545,relate:0.29117,gaussian:0.00000
+iter:02400,transfer:0.73045,classifier:0.24853,heuristic:0.09865,relate:0.56817,gaussian:0.00000
+iter:02500,transfer:0.70776,classifier:0.32691,heuristic:0.10579,relate:0.79850,gaussian:0.00000
+iter:02600,transfer:0.65514,classifier:0.64527,heuristic:0.17932,relate:0.75089,gaussian:0.00000
+iter:02700,transfer:0.66671,classifier:0.23974,heuristic:0.20581,relate:0.47918,gaussian:0.00000
+iter:02800,transfer:0.68452,classifier:0.24504,heuristic:0.21446,relate:0.98242,gaussian:0.00000
+iter:02900,transfer:0.70509,classifier:0.42011,heuristic:0.05002,relate:0.60298,gaussian:0.00000
+iter: 02999, precision: 0.45315
+iter:03000,transfer:0.67088,classifier:0.42898,heuristic:0.16911,relate:0.88244,gaussian:0.00000
+iter:03100,transfer:0.69545,classifier:0.21687,heuristic:0.15759,relate:0.76534,gaussian:0.00000
+iter:03200,transfer:0.66519,classifier:0.31388,heuristic:0.25377,relate:0.91329,gaussian:0.00000
+iter:03300,transfer:0.66554,classifier:0.31608,heuristic:0.09413,relate:0.83206,gaussian:0.00000
+iter:03400,transfer:0.69814,classifier:0.24362,heuristic:0.18024,relate:0.82130,gaussian:0.00000
+iter:03500,transfer:0.70250,classifier:0.11083,heuristic:0.05331,relate:0.61088,gaussian:0.00000
+iter:03600,transfer:0.67448,classifier:0.27459,heuristic:0.08053,relate:0.50188,gaussian:0.00000
+iter:03700,transfer:0.68930,classifier:0.20864,heuristic:0.10994,relate:0.91054,gaussian:0.00000
+iter:03800,transfer:0.68139,classifier:0.34670,heuristic:0.14716,relate:0.31897,gaussian:0.00000
+iter:03900,transfer:0.68144,classifier:0.50487,heuristic:0.16993,relate:0.91646,gaussian:0.00000
+iter: 03999, precision: 0.45423
+iter:04000,transfer:0.71674,classifier:0.26484,heuristic:0.15759,relate:0.28092,gaussian:0.00000
+iter:04100,transfer:0.68695,classifier:0.27223,heuristic:0.16321,relate:0.97481,gaussian:0.00000
+iter:04200,transfer:0.68397,classifier:0.30885,heuristic:0.18871,relate:0.87250,gaussian:0.00000
+iter:04300,transfer:0.69113,classifier:0.42325,heuristic:0.29222,relate:0.97853,gaussian:0.00000
+iter:04400,transfer:0.64864,classifier:0.31549,heuristic:0.12346,relate:0.93847,gaussian:0.00000
+iter:04500,transfer:0.69533,classifier:0.49470,heuristic:0.20975,relate:0.98858,gaussian:0.00000
+iter:04600,transfer:0.67889,classifier:0.20203,heuristic:0.06032,relate:0.61337,gaussian:0.00000
+iter:04700,transfer:0.68892,classifier:0.19326,heuristic:0.14846,relate:0.42103,gaussian:0.00000
+iter:04800,transfer:0.70336,classifier:0.21116,heuristic:0.17017,relate:0.87889,gaussian:0.00000
+iter:04900,transfer:0.70041,classifier:0.15758,heuristic:0.11184,relate:0.44742,gaussian:0.00000
+iter: 04999, precision: 0.47505
+iter:05000,transfer:0.71131,classifier:0.31491,heuristic:0.06798,relate:0.75816,gaussian:0.00000
+iter:05100,transfer:0.68393,classifier:0.09300,heuristic:0.15423,relate:0.96413,gaussian:0.00000
+iter:05200,transfer:0.69669,classifier:0.07967,heuristic:0.12116,relate:0.57054,gaussian:0.00000
+iter:05300,transfer:0.69904,classifier:0.19470,heuristic:0.07754,relate:0.34621,gaussian:0.00000
+iter:05400,transfer:0.69982,classifier:0.06340,heuristic:0.10338,relate:0.22586,gaussian:0.00000
+iter:05500,transfer:0.68184,classifier:0.26833,heuristic:0.06743,relate:0.40227,gaussian:0.00000
+iter:05600,transfer:0.68336,classifier:0.16102,heuristic:0.14656,relate:0.37109,gaussian:0.00000
+iter:05700,transfer:0.68697,classifier:0.26701,heuristic:0.03637,relate:0.73189,gaussian:0.00000
+iter:05800,transfer:0.69066,classifier:0.06842,heuristic:0.15897,relate:0.24678,gaussian:0.00000
+iter:05900,transfer:0.68625,classifier:0.07413,heuristic:0.15055,relate:0.91962,gaussian:0.00000
+iter: 05999, precision: 0.46095
+iter:06000,transfer:0.68352,classifier:0.05541,heuristic:0.11029,relate:0.95608,gaussian:0.00000
+iter:06100,transfer:0.68833,classifier:0.12602,heuristic:0.09486,relate:0.84421,gaussian:0.00000
+iter:06200,transfer:0.67928,classifier:0.41354,heuristic:0.05315,relate:0.43882,gaussian:0.00000
+iter:06300,transfer:0.68324,classifier:0.07201,heuristic:0.08278,relate:0.63008,gaussian:0.00000
+iter:06400,transfer:0.71621,classifier:0.24478,heuristic:0.08918,relate:0.94115,gaussian:0.00000
+iter:06500,transfer:0.70081,classifier:0.15488,heuristic:0.04229,relate:0.72353,gaussian:0.00000
+iter:06600,transfer:0.71178,classifier:0.07370,heuristic:0.12513,relate:0.95294,gaussian:0.00000
+iter:06700,transfer:0.69905,classifier:0.15873,heuristic:0.12568,relate:0.96730,gaussian:0.00000
+iter:06800,transfer:0.69137,classifier:0.07152,heuristic:0.10580,relate:0.96534,gaussian:0.00000
+iter:06900,transfer:0.68640,classifier:0.01875,heuristic:0.07300,relate:0.92060,gaussian:0.00000
+iter: 06999, precision: 0.49089
+iter:07000,transfer:0.67371,classifier:0.39778,heuristic:0.09049,relate:0.89745,gaussian:0.00000
+iter:07100,transfer:0.69542,classifier:0.29861,heuristic:0.08731,relate:0.95490,gaussian:0.00000
+iter:07200,transfer:0.69389,classifier:0.16876,heuristic:0.04180,relate:0.67911,gaussian:0.00000
+iter:07300,transfer:0.69393,classifier:0.08083,heuristic:0.12772,relate:0.93202,gaussian:0.00000
+iter:07400,transfer:0.69049,classifier:0.16992,heuristic:0.08538,relate:0.81294,gaussian:0.00000
+iter:07500,transfer:0.69236,classifier:0.28223,heuristic:0.08462,relate:0.90746,gaussian:0.00000
+iter:07600,transfer:0.69566,classifier:0.02113,heuristic:0.14992,relate:0.97513,gaussian:0.00000
+iter:07700,transfer:0.67300,classifier:0.03479,heuristic:0.02585,relate:0.61638,gaussian:0.00000
+iter:07800,transfer:0.71591,classifier:0.10107,heuristic:0.13374,relate:0.96769,gaussian:0.00000
+iter:07900,transfer:0.69042,classifier:0.16586,heuristic:0.09334,relate:0.95492,gaussian:0.00000
+iter: 07999, precision: 0.47657
+iter:08000,transfer:0.71104,classifier:0.11307,heuristic:0.05882,relate:0.88821,gaussian:0.00000
+iter:08100,transfer:0.68832,classifier:0.13241,heuristic:0.08335,relate:0.95594,gaussian:0.00000
+iter:08200,transfer:0.66789,classifier:0.01464,heuristic:0.12349,relate:0.98503,gaussian:0.00000
+iter:08300,transfer:0.68949,classifier:0.16383,heuristic:0.08564,relate:0.95947,gaussian:0.00000
+iter:08400,transfer:0.68497,classifier:0.01894,heuristic:0.05354,relate:0.66476,gaussian:0.00000
+iter:08500,transfer:0.71695,classifier:0.30212,heuristic:0.07075,relate:0.56336,gaussian:0.00000
+iter:08600,transfer:0.68451,classifier:0.02726,heuristic:0.05611,relate:0.71388,gaussian:0.00000
+iter:08700,transfer:0.68155,classifier:0.05020,heuristic:0.09005,relate:0.23348,gaussian:0.00000
+iter:08800,transfer:0.68181,classifier:0.04802,heuristic:0.10440,relate:0.17094,gaussian:0.00000
+iter:08900,transfer:0.71025,classifier:0.11256,heuristic:0.04849,relate:0.38435,gaussian:0.00000
+iter: 08999, precision: 0.47397
+iter:09000,transfer:0.68230,classifier:0.04502,heuristic:0.09109,relate:0.97546,gaussian:0.00000
+iter:09100,transfer:0.69544,classifier:0.04460,heuristic:0.07830,relate:0.89825,gaussian:0.00000
+iter:09200,transfer:0.71524,classifier:0.04776,heuristic:0.13128,relate:0.11655,gaussian:0.00000
+iter:09300,transfer:0.66957,classifier:0.23279,heuristic:0.09436,relate:0.46869,gaussian:0.00000
+iter:09400,transfer:0.70637,classifier:0.08125,heuristic:0.09105,relate:0.20582,gaussian:0.00000
+iter:09500,transfer:0.68133,classifier:0.23796,heuristic:0.08155,relate:0.35196,gaussian:0.00000
+iter:09600,transfer:0.68981,classifier:0.10852,heuristic:0.07064,relate:0.27078,gaussian:0.00000
+iter:09700,transfer:0.68833,classifier:0.01037,heuristic:0.07437,relate:0.82943,gaussian:0.00000
+iter:09800,transfer:0.70425,classifier:0.03787,heuristic:0.11044,relate:0.97603,gaussian:0.00000
+iter:09900,transfer:0.67805,classifier:0.01466,heuristic:0.07675,relate:0.96884,gaussian:0.00000
+iter: 09999, precision: 0.47961
+iter:10000,transfer:0.71680,classifier:0.12854,heuristic:0.04953,relate:0.46921,gaussian:0.00000
+iter:10100,transfer:0.66548,classifier:0.05544,heuristic:0.04629,relate:0.89366,gaussian:0.00000
+iter:10200,transfer:0.69091,classifier:0.10480,heuristic:0.05708,relate:0.22264,gaussian:0.00000
+iter:10300,transfer:0.70672,classifier:0.06472,heuristic:0.09370,relate:0.16703,gaussian:0.00000
+iter:10400,transfer:0.67260,classifier:0.09868,heuristic:0.07575,relate:0.45285,gaussian:0.00000
+iter:10500,transfer:0.70314,classifier:0.04553,heuristic:0.03340,relate:0.84804,gaussian:0.00000
+iter:10600,transfer:0.67983,classifier:0.21191,heuristic:0.05262,relate:0.69764,gaussian:0.00000
+iter:10700,transfer:0.69318,classifier:0.03676,heuristic:0.07444,relate:0.31877,gaussian:0.00000
+iter:10800,transfer:0.68432,classifier:0.04422,heuristic:0.05072,relate:0.34046,gaussian:0.00000
+iter:10900,transfer:0.69411,classifier:0.22838,heuristic:0.12960,relate:0.98350,gaussian:0.00000
+iter: 10999, precision: 0.45900
+iter:11000,transfer:0.69496,classifier:0.30170,heuristic:0.10409,relate:0.17958,gaussian:0.00000
+iter:11100,transfer:0.69846,classifier:0.01145,heuristic:0.07249,relate:0.64389,gaussian:0.00000
+iter:11200,transfer:0.69571,classifier:0.27023,heuristic:0.06791,relate:0.78313,gaussian:0.00000
+iter:11300,transfer:0.68153,classifier:0.27874,heuristic:0.04315,relate:0.30529,gaussian:0.00000
+iter:11400,transfer:0.69162,classifier:0.07046,heuristic:0.05534,relate:0.92723,gaussian:0.00000
+iter:11500,transfer:0.70380,classifier:0.00646,heuristic:0.03376,relate:0.48368,gaussian:0.00000
+iter:11600,transfer:0.68384,classifier:0.23976,heuristic:0.07414,relate:0.96801,gaussian:0.00000
+iter:11700,transfer:0.67745,classifier:0.13903,heuristic:0.05856,relate:0.32020,gaussian:0.00000
+iter:11800,transfer:0.69371,classifier:0.03504,heuristic:0.03511,relate:0.87980,gaussian:0.00000
+iter:11900,transfer:0.68054,classifier:0.03178,heuristic:0.11330,relate:0.98926,gaussian:0.00000
+iter: 11999, precision: 0.47202
+iter:12000,transfer:0.68483,classifier:0.01650,heuristic:0.07075,relate:0.96403,gaussian:0.00000
+iter:12100,transfer:0.70046,classifier:0.04694,heuristic:0.03120,relate:0.80987,gaussian:0.00000
+iter:12200,transfer:0.69373,classifier:0.07164,heuristic:0.07172,relate:0.97110,gaussian:0.00000
+iter:12300,transfer:0.67020,classifier:0.05813,heuristic:0.07484,relate:0.26624,gaussian:0.00000
+iter:12400,transfer:0.68714,classifier:0.02099,heuristic:0.07475,relate:0.84089,gaussian:0.00000
+iter:12500,transfer:0.70517,classifier:0.02379,heuristic:0.06816,relate:0.95613,gaussian:0.00000
+iter:12600,transfer:0.68674,classifier:0.13069,heuristic:0.08156,relate:0.29225,gaussian:0.00000
+iter:12700,transfer:0.70226,classifier:0.02074,heuristic:0.07858,relate:0.19848,gaussian:0.00000
+iter:12800,transfer:0.69432,classifier:0.07931,heuristic:0.07035,relate:0.82982,gaussian:0.00000
+iter:12900,transfer:0.69926,classifier:0.24917,heuristic:0.03982,relate:0.67628,gaussian:0.00000
+iter: 12999, precision: 0.43124
+iter:13000,transfer:0.69842,classifier:0.09951,heuristic:0.04986,relate:0.88149,gaussian:0.00000
+iter:13100,transfer:0.69630,classifier:0.14694,heuristic:0.07077,relate:0.21155,gaussian:0.00000
+iter:13200,transfer:0.70595,classifier:0.01079,heuristic:0.07582,relate:0.79783,gaussian:0.00000
+iter:13300,transfer:0.70342,classifier:0.04187,heuristic:0.06654,relate:0.18736,gaussian:0.00000
+iter:13400,transfer:0.68408,classifier:0.05021,heuristic:0.03186,relate:0.69969,gaussian:0.00000
+iter:13500,transfer:0.70485,classifier:0.25785,heuristic:0.04951,relate:0.34426,gaussian:0.00000
+iter:13600,transfer:0.70976,classifier:0.02014,heuristic:0.05858,relate:0.22681,gaussian:0.00000
+iter:13700,transfer:0.69207,classifier:0.17831,heuristic:0.04556,relate:0.95318,gaussian:0.00000
+iter:13800,transfer:0.70106,classifier:0.02043,heuristic:0.07934,relate:0.27763,gaussian:0.00000
+iter:13900,transfer:0.68115,classifier:0.06261,heuristic:0.06813,relate:0.13913,gaussian:0.00000
+iter: 13999, precision: 0.45228
+iter:14000,transfer:0.70430,classifier:0.00278,heuristic:0.06025,relate:0.95451,gaussian:0.00000
+iter:14100,transfer:0.69546,classifier:0.03379,heuristic:0.05340,relate:0.85337,gaussian:0.00000
+iter:14200,transfer:0.69699,classifier:0.06402,heuristic:0.05255,relate:0.58544,gaussian:0.00000
+iter:14300,transfer:0.69101,classifier:0.04721,heuristic:0.08246,relate:0.20708,gaussian:0.00000
+iter:14400,transfer:0.67856,classifier:0.26258,heuristic:0.05184,relate:0.29989,gaussian:0.00000
+iter:14500,transfer:0.70082,classifier:0.01559,heuristic:0.02944,relate:0.88277,gaussian:0.00000
+iter:14600,transfer:0.68398,classifier:0.01234,heuristic:0.07149,relate:0.26706,gaussian:0.00000
+iter:14700,transfer:0.68386,classifier:0.15186,heuristic:0.04577,relate:0.59913,gaussian:0.00000
+iter:14800,transfer:0.68475,classifier:0.18882,heuristic:0.04991,relate:0.95461,gaussian:0.00000
+iter:14900,transfer:0.68313,classifier:0.05050,heuristic:0.01887,relate:0.61809,gaussian:0.00000
+iter: 14999, precision: 0.53948
+iter:15000,transfer:0.69953,classifier:0.00377,heuristic:0.04237,relate:0.91252,gaussian:0.00000
+iter:15100,transfer:0.69737,classifier:0.00491,heuristic:0.03973,relate:0.91526,gaussian:0.00000
+iter:15200,transfer:0.68831,classifier:0.01906,heuristic:0.04572,relate:0.40730,gaussian:0.00000
+iter:15300,transfer:0.68234,classifier:0.04887,heuristic:0.05822,relate:0.20014,gaussian:0.00000
+iter:15400,transfer:0.69317,classifier:0.06070,heuristic:0.07312,relate:0.44558,gaussian:0.00000
+iter:15500,transfer:0.70603,classifier:0.00231,heuristic:0.06506,relate:0.31187,gaussian:0.00000
+iter:15600,transfer:0.69615,classifier:0.17072,heuristic:0.03171,relate:0.33609,gaussian:0.00000
+iter:15700,transfer:0.67914,classifier:0.04115,heuristic:0.04038,relate:0.38805,gaussian:0.00000
+iter:15800,transfer:0.69556,classifier:0.13595,heuristic:0.03381,relate:0.50881,gaussian:0.00000
+iter:15900,transfer:0.68462,classifier:0.11396,heuristic:0.06220,relate:0.37143,gaussian:0.00000
+iter: 15999, precision: 0.45249
+iter:16000,transfer:0.69985,classifier:0.06852,heuristic:0.06788,relate:0.18445,gaussian:0.00000
+iter:16100,transfer:0.69834,classifier:0.08335,heuristic:0.02799,relate:0.47437,gaussian:0.00000
+iter:16200,transfer:0.68201,classifier:0.14531,heuristic:0.04038,relate:0.27448,gaussian:0.00000
+iter:16300,transfer:0.69823,classifier:0.10493,heuristic:0.07761,relate:0.98149,gaussian:0.00000
+iter:16400,transfer:0.69261,classifier:0.05055,heuristic:0.04659,relate:0.42137,gaussian:0.00000
+iter:16500,transfer:0.68799,classifier:0.04668,heuristic:0.05368,relate:0.92887,gaussian:0.00000
+iter:16600,transfer:0.70363,classifier:0.00552,heuristic:0.06635,relate:0.21956,gaussian:0.00000
+iter:16700,transfer:0.70722,classifier:0.21304,heuristic:0.05388,relate:0.23443,gaussian:0.00000
+iter:16800,transfer:0.67679,classifier:0.14200,heuristic:0.06120,relate:0.19546,gaussian:0.00000
+iter:16900,transfer:0.68992,classifier:0.08569,heuristic:0.03597,relate:0.75183,gaussian:0.00000
+iter: 16999, precision: 0.52777
+iter:17000,transfer:0.69303,classifier:0.00471,heuristic:0.06694,relate:0.97023,gaussian:0.00000
+iter:17100,transfer:0.69051,classifier:0.04654,heuristic:0.04609,relate:0.45933,gaussian:0.00000
+iter:17200,transfer:0.68755,classifier:0.05259,heuristic:0.06038,relate:0.90073,gaussian:0.00000
+iter:17300,transfer:0.69532,classifier:0.01395,heuristic:0.03702,relate:0.81981,gaussian:0.00000
+iter:17400,transfer:0.69608,classifier:0.00433,heuristic:0.05128,relate:0.96576,gaussian:0.00000
+iter:17500,transfer:0.69236,classifier:0.12413,heuristic:0.01833,relate:0.77206,gaussian:0.00000
+iter:17600,transfer:0.67559,classifier:0.03223,heuristic:0.03370,relate:0.45588,gaussian:0.00000
+iter:17700,transfer:0.69356,classifier:0.02795,heuristic:0.04042,relate:0.93724,gaussian:0.00000
+iter:17800,transfer:0.69553,classifier:0.01422,heuristic:0.05211,relate:0.94490,gaussian:0.00000
+iter:17900,transfer:0.68851,classifier:0.01345,heuristic:0.05533,relate:0.32720,gaussian:0.00000
+iter: 17999, precision: 0.46855
+iter:18000,transfer:0.69356,classifier:0.04511,heuristic:0.02637,relate:0.63509,gaussian:0.00000
+iter:18100,transfer:0.69043,classifier:0.03105,heuristic:0.06090,relate:0.97350,gaussian:0.00000
+iter:18200,transfer:0.70965,classifier:0.11399,heuristic:0.05774,relate:0.20471,gaussian:0.00000
+iter:18300,transfer:0.69067,classifier:0.00876,heuristic:0.05878,relate:0.30864,gaussian:0.00000
+iter:18400,transfer:0.68747,classifier:0.00853,heuristic:0.03088,relate:0.30756,gaussian:0.00000
+iter:18500,transfer:0.68435,classifier:0.08579,heuristic:0.05485,relate:0.34548,gaussian:0.00000
+iter:18600,transfer:0.70271,classifier:0.29542,heuristic:0.03478,relate:0.91669,gaussian:0.00000
+iter:18700,transfer:0.70378,classifier:0.20189,heuristic:0.03939,relate:0.90859,gaussian:0.00000
+iter:18800,transfer:0.70526,classifier:0.28938,heuristic:0.03394,relate:0.33466,gaussian:0.00000
+iter:18900,transfer:0.69087,classifier:0.00238,heuristic:0.04662,relate:0.27493,gaussian:0.00000
+iter: 18999, precision: 0.44078
+iter:19000,transfer:0.68971,classifier:0.00956,heuristic:0.04843,relate:0.31812,gaussian:0.00000
+iter:19100,transfer:0.70503,classifier:0.00495,heuristic:0.03171,relate:0.82090,gaussian:0.00000
+iter:19200,transfer:0.71245,classifier:0.03188,heuristic:0.02285,relate:0.76918,gaussian:0.00000
+iter:19300,transfer:0.68909,classifier:0.01738,heuristic:0.06577,relate:0.19303,gaussian:0.00000
+iter:19400,transfer:0.68972,classifier:0.08090,heuristic:0.05526,relate:0.95577,gaussian:0.00000
+iter:19500,transfer:0.68211,classifier:0.24205,heuristic:0.05589,relate:0.17739,gaussian:0.00000
+iter:19600,transfer:0.69100,classifier:0.00282,heuristic:0.03685,relate:0.91689,gaussian:0.00000
+iter:19700,transfer:0.69874,classifier:0.01675,heuristic:0.03776,relate:0.93580,gaussian:0.00000
+iter:19800,transfer:0.70300,classifier:0.00154,heuristic:0.03976,relate:0.71271,gaussian:0.00000
+iter:19900,transfer:0.69807,classifier:0.01415,heuristic:0.02854,relate:0.68092,gaussian:0.00000
+iter: 19999, precision: 0.48677
+iter:20000,transfer:0.68713,classifier:0.19113,heuristic:0.05376,relate:0.96061,gaussian:0.00000
