@@ -44,7 +44,7 @@ if __name__ == "__main__":
     parser.add_argument('--num_iterations', type=int, default=20004, help="interation num ")
     parser.add_argument('--lr', type=float, default=0.003, help="learning rate")
     parser.add_argument('--trade_off', type=float, default=1, help="parameter for transfer loss")
-    parser.add_argument('--batch_size', type=int, default=36, help="batch size")
+    parser.add_argument('--batch_size', type=int, default=32, help="batch size")
     parser.add_argument('--seed', type=int, default=2019, help="batch size ???")
     parser.add_argument('--heuristic_num', type=int, default=3, help="number of heuristic subnetworks")
     parser.add_argument('--heuristic_initial', type=bool, default=True, help="number of heuristic subnetworks")
