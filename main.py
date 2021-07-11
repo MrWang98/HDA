@@ -22,6 +22,7 @@ from scripts.train_uda import train_uda
 from scripts.train_ssda import train_ssda
 from scripts.train_msda import train_msda
 from scripts.train_test import train_test
+from radar_script.matlab_processer import image_processer,write_txt
 
 
 
@@ -32,12 +33,17 @@ if __name__ == "__main__":
 
     parser = argparse.ArgumentParser(description='Domain Adaptation')
     parser.add_argument('--task', type=str, default='data', help="select the task(UDA, SSDA, MSDA)")
+    parser.add_argument('--image_prepare', type=bool, default='False', help="prepare image")
+    parser.add_argument('--data_path', type=str, default='../raw_data/210621/150cm', help="raw-data path of radar")
+    parser.add_argument('--range', type=int, default=256, help="range of rangefft")
     parser.add_argument('--gpu_id', type=str, nargs='?', default='1', help="device id to run")
     parser.add_argument('--net', type=str, default='ResNet34', help="Options: ResNet50")
     parser.add_argument('--dset', type=str, default='baby-care', help="The dataset or source dataset used")
     parser.add_argument('--s_dset_path', type=str, default='data/DATA/adult_s.txt', help="The source dataset path list")
     parser.add_argument('--t_dset_path', type=str, default='data/DATA/adult_t.txt', help="The target dataset path list")
-    parser.add_argument('--output_dir', type=str, default='HDA/DATA', help="output directory of our model (in ../snapshot directory)")
+    parser.add_argument('--some_target', type=str, default='data/DATA/adult_t.txt', help="The target dataset path list")
+    parser.add_argument('--user', type=str, default='wzy', help="user name")
+    parser.add_argument('--output_dir', type=str, default='checkpoint/DATA', help="output directory of our model (in ../snapshot directory)")
     parser.add_argument('--test_interval', type=int, default=500, help="interval of two continuous test phase")
     parser.add_argument('--snapshot_interval', type=int, default=20000, help="interval of two continuous output model")
     parser.add_argument('--print_num', type=int, default=100, help="interval of two print loss")
@@ -149,16 +155,30 @@ if __name__ == "__main__":
     elif args.task=="data":
         config["data"] = {"source": {"list_path": args.s_dset_path,
                                      "batch_size": args.batch_size}, \
+                          "source2":{"list_path": args.some_target},
                           "target": {"list_path": args.t_dset_path,
                                      "batch_size": args.batch_size}, \
                           "test": {"list_path": args.t_dset_path,
                                    "batch_size": args.batch_size}}
-        # config["data"] = {"source": {"batch_size": args.batch_size},
-        #                   "target": {"batch_size": args.batch_size},
-        #                   "test": {"batch_size": args.batch_size},
-        #                   "source_path":args.s_dset_path,
-        #                   "target_path":args.t_dset_path,
-        #                   }
+        config["user"] = {"name":args.user}
+        # if not args.image_prepare:
+        #     config["data"] = {"source": {"list_path": args.s_dset_path,
+        #                                  "batch_size": args.batch_size}, \
+        #                       "target": {"list_path": args.t_dset_path,
+        #                                  "batch_size": args.batch_size}, \
+        #                       "test": {"list_path": args.t_dset_path,
+        #                                "batch_size": args.batch_size}}
+        # else:
+        #     data_path = args.data_path
+        #     range = 256
+        #     image_path = image_processer(data_path, range,flag=True)
+        #     all_path, sorce_path, target_path = write_txt(image_path, 0.7)
+        #     config["data"] = {"source": {"list_path": sorce_path,
+        #                                  "batch_size": args.batch_size}, \
+        #                       "target": {"list_path": target_path,
+        #                                  "batch_size": args.batch_size}, \
+        #                       "test": {"list_path": target_path,
+        #                                "batch_size": args.batch_size}}
         train_test(config)
     else:
         print("GG")
