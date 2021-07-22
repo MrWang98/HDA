@@ -1,6 +1,6 @@
-#kinds=(35cm 50cm 65cm 80cm 15d 30d 45d 60d 15h 30h down left right)
-kinds=(15d 30d 30h down left right)
-persons=(fck)
+kinds=(50cm 65cm 80cm 15d 30d 45d 60d 15h 30h down left right)
+#kinds=(15d 30d 30h down left right)
+persons=(guxiang)
 cur=`pwd`
 echo $cur
 gpu_id=1

@@ -39,18 +39,21 @@ if __name__ == "__main__":
     parser.add_argument('--gpu_id', type=str, nargs='?', default='1', help="device id to run")
     parser.add_argument('--net', type=str, default='ResNet34', help="Options: ResNet50")
     parser.add_argument('--dset', type=str, default='baby-care', help="The dataset or source dataset used")
-    parser.add_argument('--s_dset_path', type=str, default='data/DATA/adult_s.txt', help="The source dataset path list")
-    parser.add_argument('--t_dset_path', type=str, default='data/DATA/adult_t.txt', help="The target dataset path list")
-    parser.add_argument('--some_target', type=str, default='data/DATA/adult_t.txt', help="The target dataset path list")
-    parser.add_argument('--user', type=str, default='wzy', help="user name")
+
+    parser.add_argument('--user', type=str, default='juhao3', help="user name")
+    parser.add_argument('--kind', type=str, default='30h', help="kind of experiments")
+
+    parser.add_argument('--s_dset_path', type=str, default='data/DATA/', help="The source dataset path list")
+    parser.add_argument('--t_dset_path', type=str, default='data/DATA/', help="The target dataset path list")
+    parser.add_argument('--some_target', type=str, default='data/DATA/', help="The target dataset path list")
     parser.add_argument('--output_dir', type=str, default='checkpoint/DATA', help="output directory of our model (in ../snapshot directory)")
-    parser.add_argument('--test_interval', type=int, default=500, help="interval of two continuous test phase")
-    parser.add_argument('--snapshot_interval', type=int, default=20000, help="interval of two continuous output model")
+    parser.add_argument('--test_interval', type=int, default=1000, help="interval of two continuous test phase")
+    parser.add_argument('--snapshot_interval', type=int, default=10000, help="interval of two continuous output model")
     parser.add_argument('--print_num', type=int, default=100, help="interval of two print loss")
-    parser.add_argument('--num_iterations', type=int, default=20004, help="interation num ")
+    parser.add_argument('--num_iterations', type=int, default=10004, help="interation num ")
     parser.add_argument('--lr', type=float, default=0.003, help="learning rate")
     parser.add_argument('--trade_off', type=float, default=1, help="parameter for transfer loss")
-    parser.add_argument('--batch_size', type=int, default=32, help="batch size")
+    parser.add_argument('--batch_size', type=int, default=36, help="batch size")
     parser.add_argument('--seed', type=int, default=2019, help="batch size ???")
     parser.add_argument('--heuristic_num', type=int, default=3, help="number of heuristic subnetworks")
     parser.add_argument('--heuristic_initial', type=bool, default=True, help="number of heuristic subnetworks")
@@ -70,11 +73,11 @@ if __name__ == "__main__":
     config["test_interval"] = args.test_interval
     config["snapshot_interval"] = args.snapshot_interval
     config["output_for_test"] = True
-    config["output_path"] = osp.join("experiments", args.task, args.output_dir)
+    config["output_path"] = osp.join('result',args.user)
 
     if not osp.exists(config["output_path"]):
         os.system('mkdir -p '+config["output_path"])
-    config["out_file"] = open(osp.join(config["output_path"], "log.txt"), "w")
+    config["out_file"] = open(osp.join(config["output_path"],args.kind+".log"), "w")
     if not osp.exists(config["output_path"]):
         os.mkdir(config["output_path"])
 
@@ -153,14 +156,22 @@ if __name__ == "__main__":
         config["data_list"] = ["data/MSDA_domainnet/clipart_train.txt","data/MSDA_domainnet/infograph_train.txt","data/MSDA_domainnet/painting_train.txt","data/MSDA_domainnet/quickdraw_train.txt","data/MSDA_domainnet/real_train.txt","data/MSDA_domainnet/sketch_train.txt"]
         train_msda(config)
     elif args.task=="data":
-        config["data"] = {"source": {"list_path": args.s_dset_path,
+        config["data"] = {"source": {"list_path": os.path.join(args.s_dset_path),
                                      "batch_size": args.batch_size}, \
-                          "source2":{"list_path": args.some_target},
-                          "target": {"list_path": args.t_dset_path,
+                          "source2":{"list_path": os.path.join(args.some_target)},
+                          "target": {"list_path": os.path.join(args.t_dset_path),
                                      "batch_size": args.batch_size}, \
-                          "test": {"list_path": args.t_dset_path,
+                          "test": {"list_path": os.path.join(args.t_dset_path),
                                    "batch_size": args.batch_size}}
+        # config["data"] = {"source": {"list_path": os.path.join(args.s_dset_path,args.user,args.kind+'.txt'),
+        #                              "batch_size": args.batch_size}, \
+        #                   "source2": {"list_path": os.path.join(args.some_target,args.user,args.kind+'_t.txt')},
+        #                   "target": {"list_path": os.path.join(args.t_dset_path,args.user,args.kind+'_s.txt'),
+        #                              "batch_size": args.batch_size}, \
+        #                   "test": {"list_path": os.path.join(args.t_dset_path,args.user,args.kind+'_S.txt'),
+        #                            "batch_size": args.batch_size}}
         config["user"] = {"name":args.user}
+        config["kind"] = args.kind
         # if not args.image_prepare:
         #     config["data"] = {"source": {"list_path": args.s_dset_path,
         #                                  "batch_size": args.batch_size}, \
