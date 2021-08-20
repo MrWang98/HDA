@@ -118,9 +118,9 @@ def train_test(config):
     len_train_source = len(dset_loaders["source"])
     len_train_target = len(dset_loaders["target"])
     transfer_loss_value = classifier_loss_value = total_loss_value = 0.0
-    print(base_network)
-    print('-------------------------')
-    print(ad_net)
+    # print(base_network)
+    # print('-------------------------')
+    # print(ad_net)
     max_acc=0
     accs=[]
     count=0
@@ -141,14 +141,19 @@ def train_test(config):
             config["out_file"].write(log_str+"\n")
             config["out_file"].flush()
             print(log_str)
+        torch.save(base_network.state_dict(), osp.join(config["output_path"],\
+                            "{}_model.pth.tar".format(config["kind"])))
 
-        if flag==5:
+        if flag==3:
+            print("save model")
+            torch.save(base_network.state_dict(), osp.join(config["output_path"], \
+                "{}_model.pth.tar".format(config["kind"])))
             break
         #save model
         if i % config["snapshot_interval"] == 0 and i:
             print("save model")
-            torch.save(base_network.state_dict(), osp.join(config["output_path"], \
-                "iter_{:05d}_model.pth.tar".format(i)))
+            torch.save(base_network.state_dict(), osp.join(config["output_path"],\
+                        "{}_model.pth.tar".format(config["kind"])))
 
         ## train one iter
         base_network.train(True)
